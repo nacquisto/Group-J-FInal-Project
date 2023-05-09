@@ -1,0 +1,204 @@
+/* Accompanying CSS For Stock Similarity Scorer */
+
+/* Body and Headers */
+
+
+  body {
+    font-family: verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4e9da;
+    color: #333;
+  }
+  
+  header {
+    background-color: #04314f;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 0 3px #FFA500;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+/* Navigational Menu */
+  nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Self-Created Divs */
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .column {
+    background-color: #c3dced;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px 50px 30px; 
+  }
+
+  .form_container {
+    background-color: #c3dced;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 50px 30px;
+    padding: 20px;
+    text-align:center;
+    transition: 0.3s;
+  }
+
+  .result_container {
+    background-color: #dcecf4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 50px 30px;
+    padding: 20px;
+    text-align:center;
+    width:120%;
+  }
+
+  table tr,td {
+    text-align: center;
+    height: 40px;
+    width: 220px;
+  }
+
+  table.table-style tr,
+  table.table-style td { /* Added '.table-style' class */
+    text-align: center;
+    background-color: #c5e3f1;
+    height: 40px;
+    width: 30%;
+  }
+
+  table.table-style th { /* Added '.table-style' class */
+    background-color: #04314f;
+    color: white;
+  }
+
+  /* Images */
+
+  img {
+    width: 100%;
+    max-width: 70%;
+    margin-bottom: 20px;
+    align-self: center;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Forms */
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="date"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: #F2F2F2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  input[type="date"]:focus {
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+
+  form input[type="text"],
+  form input[type="number"],
+  form select {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input[type="submit"] {
+    background-color: #0071bc;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 12px 30px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  /* Footers */
+  
+  footer {
+    background-color: #f47721;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 1.25em);
+  }
+  
+  footer ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+  }
+  
+  footer li {
+    margin: 0 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  

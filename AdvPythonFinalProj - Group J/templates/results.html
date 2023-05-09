@@ -1,0 +1,189 @@
+<!-- results.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Stock Similarity Scorer - Results</title>
+  <!-- <link rel="stylesheet" type="text/css" href="../static/styles.css"> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+  <header>
+    <h1>The Stock Similarity Scorer</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2> Model Results</h2>
+
+    <div class="result_container">
+      <h4> Displaying Financial Data For:</h4>
+
+      <table align="center">
+        <tr>
+          <td><p><b>Stock 1:</b> {{ticker1 }}</p></td>
+          <td><p><b>Stock 2:</b> {{ticker2 }}</p></td>
+        </tr>
+        <tr> 
+          <td><p><b>From:</b> {{date }}</p></td>
+          <td><p><b>To:</b> {{today }}</p></td>
+        </tr>
+      </table>
+
+    </div><br>
+
+    <h2> Fundamental Data </h2>
+    <div class="result_container">
+      <table align="center" class="fundandtech table-style"> 
+        <tr>     
+          <th>Measure:</th>
+          <th>{{ticker1 }}</th>
+          <th>{{ticker2 }}</th>
+        </tr>
+
+        <tr>
+          <td><b>Trailing / Forward PE:</b></td>
+          <td>{{trailingPE_ticker1}} / {{forwardPE_ticker1}}</td>
+          <td>{{trailingPE_ticker2}} / {{forwardPE_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>EBITDA:</b></td>
+          <td>{{ebitda_ticker1}}</td>
+          <td>{{ebitda_ticker2}}</td>
+        </tr>
+      
+        <tr>
+          <td><b>Return On Equity:</b></td>
+          <td>{{returnOnEquity_ticker1}}</td>
+          <td>{{returnOnEquity_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Price To Book:</b></td>
+          <td>{{priceToBook_ticker1}}</td>
+          <td>{{priceToBook_ticker2}}</td>
+        </tr>
+               
+        <tr>
+          <td><b>Projected Earnings Growth:</b></td>
+          <td>{{pegRatio_ticker1}}</td>
+          <td>{{pegRatio_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Free Cash Flow:</b></td>
+          <td> {{freeCashflow_ticker1}}</td>
+          <td> {{freeCashflow_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Debt To Equity:</b></td>
+          <td>{{debtToEquity_ticker1}}</td>
+          <td>{{debtToEquity_ticker2}}</td>
+        </tr>
+      
+        <tr>
+          <td><b>Dividend Payout Ratio:</b></td>
+          <td>{{payoutRatio_ticker1}}</td>
+          <td>{{payoutRatio_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Dividend Yield:</b></td>
+          <td>{{dividendYield_ticker1}}</td>
+          <td>{{dividendYield_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Short Ratio:</b></td>
+          <td>{{shortRatio_ticker1}}</td>
+          <td>{{shortRatio_ticker2}}</td>
+        </tr>
+
+      </table>
+      <p><i>(Above data courtesy of yfinance)</i></p>
+
+    </div>
+
+    <h2> Stock Price History </h2>
+    <div class="result_container"><br>
+      <img src="data:image/png;base64,{{ image }}" alt="Adjusted Closing Prices">
+      <table align="center" class="fundandtech table-style">
+        <tr>     
+          <th>Measure:</th>
+          <th>{{ticker1 }}</th>
+          <th>{{ticker2 }}</th>
+        </tr>
+        <tr>
+          <td><b>Starting Price:</b></td>
+          <td>{{start_ticker1 }}</td>
+          <td>{{start_ticker2 }}</td>
+        </tr>
+
+        <tr>
+          <td><b>Ending Price:</b></td>
+          <td>{{end_ticker1}}</td>
+          <td>{{end_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Total Return:</b></td>
+          <td>{{return_ticker1}}</td>
+          <td>{{return_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Standard Deviation:</b></td>
+          <td>{{std_ticker1}}</td>
+          <td>{{std_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Volatility:</b></td>
+          <td>{{vol_ticker1}}</td>
+          <td>{{vol_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Average Daily Volume:</b></td>
+          <td>{{ADV_ticker1}}</td>
+          <td>{{ADV_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Mean Daily Volume:</b></td>
+          <td>{{MDV_ticker1}}</td>
+          <td>{{MDV_ticker2}}</td>
+        </tr>
+
+        <tr>
+          <td><b>Correlation Coefficient</b></td>
+          <td colspan="2"> {{corr_coeff}}</td>
+        </tr>
+
+      </table>
+      <p><i>(Above data calculated from price movements during selected time period)</i></p>
+    </div><br>
+
+    <h2> GPT-4 Analysis </h2>
+
+    <div class="result_container">
+
+      <p> Coming Soon! </p>
+
+    </div><br>
+
+  </main>
+</body>
+</html>
+

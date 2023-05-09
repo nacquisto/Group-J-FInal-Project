@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>The Stock Similarity Scorer</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css')}}">
+</head>
+
+<body>
+  <header>
+    <h1>The Stock Similarity Scorer</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h2> Contact </h2>
+      <div class="container">
+        <div class="column">
+            <img src="{{ url_for('static', filename='nick_headshot.jpg') }}" alt="Nick Acquisto"><br>
+
+            <p1 style= "line-height: 1.5"> <b> Nick Acquisto </b> is a senior at Fordham University's Gabelli School of Business, pursuing 
+              a Bachelor's degree in Finance with a concentration in FinTech. In addition to his studies, I 
+              have a strong interest in coding and programming, particularly in Python. As an intern, he has 
+              gained valuable real-world experience in financial consulting and planning services, and has been 
+              able to apply his coding skills to solve complex problems and improve processes. </p1> <br> <br>
+
+            <p1><a href="https://www.linkedin.com/in/nick-acquisto-4b56b01a0/">Nick's LinkedIn</a></p1>
+        </div>
+
+      <div class="column">
+        <div class="content">
+          <img src="{{ url_for('static', filename='peter_headshot.jpg') }}" alt="Peter Majors"> <br>
+            <p1 style= "line-height: 1.5"> <b>Peter Majors</b> is a senior at Fordham’s Gabelli School of Business at Rose Hill majoring in 
+              Accounting Information Systems and minoring in Computer Science. He is originally from Kinnelon, 
+              New Jersey and grew up playing baseball. His love for the quantitative side of the sport led him 
+              to found the Fordham's Sports Analytics Society, which then inspired his passion for Data Science 
+              and Technoloy. In his free time, he enjoys watching and playing baseball, working out, and playing 
+              the guitar. </p1> <br> <br>
+
+            <p1><a href="https://www.linkedin.com/in/petermajors/">Peter's LinkedIn</a></p1>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
