@@ -65,7 +65,7 @@ https://share.vidyard.com/watch/CiM8ewdVhVsqR2KpwCVydp?autoplay=1&vyetoken=94fbb
 
 Please find the link below to access our code repository on GitHub, which includes our Python scripts, HTML templates, and other resources used in this project.
 
-https://github.com/pmajors/stock_performance_comparison
+https://github.com/pmajors/stock_performance_comparison](https://github.com/nacquisto/Group-J-FInal-Project/tree/main
 
 To run the code, you will need to install the prerequisite Python packages listed in our report. Once the packages are installed, you can download our code from GitHub, navigate to the directory containing the code in your terminal or command prompt, and run the command python app.py to start the Flask server. Then, you can access the application by opening your web browser and going to http://localhost:5000/.
 
